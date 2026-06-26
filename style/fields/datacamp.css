@@ -1,0 +1,11 @@
+.data-camp{
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gap{
+    padding-top: 1rem;
+    & input{
+        padding-top: 1rem;
+    }
+}
