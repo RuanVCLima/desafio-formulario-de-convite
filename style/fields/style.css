@@ -26,12 +26,22 @@
         width: 6rem;
         background-color: var(--input-base);
         border-radius: .5rem;
+        transition-property: opacity, transform;
+        transition-duration: 1s;
         &:has(:checked){
             background-color: var(--brand-light);
-
             & img{
                 content: url(../../assets/white-ellipse.svg);
+                opacity: 1;
+                transform: translateX(4.2rem);
             }
+        }
+        &:has(:checked) + label{
+            font-size: 0;
+        }
+        &:has(:checked) + label::after{
+            content: "Claro";
+            font-size: 1rem;
         }
     }
     
